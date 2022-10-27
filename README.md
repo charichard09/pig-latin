@@ -7,7 +7,7 @@
 
 Describe: pigLatin()
 
-Test: "It will test a word that begins with 'qu', if true move 'qu' to back and add 'ay'."
+Test: "It will test a word that begins with 'qu', move 'qu' to back and add 'ay'."
 Code:
 const textPassage = "quack";
 pigLatin(textPassage);
