@@ -26,6 +26,13 @@ const textPassage = "The duck goes quack.";
 pigLatin(textPassage);
 Expected Output: "The duck goes ackquay."
 
+Test: "It will test multiple words where 1 begins with 'qu' and has double quotes punctuation. if true, 
+remove punctuation, move 'qu' to back and add 'ay', then re-add punctuation."
+Code:
+const textPassage = "The duck goes 'quack'";
+pigLatin(textPassage);
+Expected Output: "The duck goes 'ackquay'"
+
 Test: "It will test a word that begins with 'qu' for uppercase 'Qu'"
 Code:
 const textPassage = "Quack";
@@ -61,7 +68,7 @@ Expected Output: "apclay"
 
 Test: "It should test a whole passage and return all words as pig latin"
 Code:
-const textPassage = "In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort."
+const textPassage = "In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit hole, and that means comfort."
 pigLatin(textPassage);
 Expected Output:
-"Inyay ayay olehay inyay ethay oundgray erethay ivedlay ayay obbithay. Otnay ayay astynay, irtyday, etway olehay, illedfay ithway ethay endsyay ofyay ormsway andyay anyay oozyyay ellsmay, ornay etyay ayay ydray, arebay, andysay olehay ithway othingnay inyay ityay otay itsay ownday onyay oryay otay eat: ityay asway ayay obbit-holehay, andyay atthay eansmay omfortcay."
+"Inyay ayay olehay inyay ethay oundgray erethay ivedlay ayay obbithay. Otnay ayay astynay, irtyday, etway olehay, illedfay ithway ethay endsyay ofyay ormsway andyay anyay oozyyay ellsmay, ornay etyay ayay ydray, arebay, andysay olehay ithway othingnay inyay ityay otay itsay ownday onyay oryay otay eat: ityay asway ayay obbit holehay, andyay atthay eansmay omfortcay."
